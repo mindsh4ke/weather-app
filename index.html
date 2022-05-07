@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="main-panel" class="panel">
+            <div id="weather-info-container">
+                <div class="horizontal-layout">
+                    <h1>Previsión del tiempo</h1>
+                    <div class="items-to-right-lay">
+                        <div id="search-button">Buscar otras ciudades</div>
+                    </div>
+                </div>
+                <div id="forecast-container">
+
+                </div>
+                <div class="chart-container">
+                    <canvas id="weather-chart"></canvas>
+                </div>
+            </div>
+            <div class="current-location-container">
+                <div id="weather-condition-container">
+                    <div class="weather-icon"></div>
+                    <p class="weather-condition-text">soleado</p>
+                </div>
+                <p id="location-text"></p>
+                <p id="temperature-text"><span>ºC</span></p>
+                <div id="extra-data-container">
+                    <div class="wind-info-container">
+                        <div></div>
+                        <p>20km/h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blur-bg" id="search-blur-bg"></div>
+        <div id="search-panel" class="panel">
+            <div class="search-location-container">
+                <span>Inserte localidad</span>
+                <input type="text" name="" id="search-location-input" placeholder="New York">
+                <div id="search-action-button">Buscar</div>
+            </div>
+            <div id="search-results-container">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/index.js"></script>
