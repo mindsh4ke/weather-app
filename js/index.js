@@ -46,7 +46,7 @@ function getCurrentLocation() {
 }
 
 function getLocation(location) {
-    fetch(`http://api.weatherapi.com/v1/current.json?key=c81431d21f094e0da6191356222104&q=${location} &lang=es`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=c81431d21f094e0da6191356222104&q=${location} &lang=es`)
         .then((response) => {
             return response.json()
         })
@@ -64,7 +64,7 @@ function getLocation(location) {
 }
 
 function get5DayWeather(location) {
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=c81431d21f094e0da6191356222104&q=${location} &lang=es&days=3`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=c81431d21f094e0da6191356222104&q=${location} &lang=es&days=3`)
         .then((response) => {
             return response.json()
         })
@@ -159,7 +159,7 @@ function setBackground(element, value) {
 
 function showSearchResults(value) {
     let container = document.querySelector('#search-results-container')
-    fetch(`http://api.weatherapi.com/v1/search.json?key=c81431d21f094e0da6191356222104&q=${value}&lang=es`)
+    fetch(`https://api.weatherapi.com/v1/search.json?key=c81431d21f094e0da6191356222104&q=${value}&lang=es`)
         .then((response) => {
             return response.json()
         })
